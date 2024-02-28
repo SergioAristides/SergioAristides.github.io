@@ -595,14 +595,14 @@ padding: 0.5rem;
 }
 
 .social-Networks{
-  padding: 2rem;
+  padding: 0.5rem;
   color: white;
 }
 
 .social-Networks h1{
   color: white;
   margin: 2rem;
-  font-size: 3rem;
+  font-size: 1.3rem;
 }
 /*Contactme*/
 
@@ -656,6 +656,8 @@ footer {
   z-index: 9999; /* Asegura que esté por encima de otros elementos */
   text-align: center;
   background: linear-gradient(to right, rgba(32, 244, 8, 0.1), rgb(32, 244, 8));
+  width: 23rem;
+  height: 34rem;
 }
 
 
@@ -678,7 +680,7 @@ footer {
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
-  margin: 3rem;
+  margin: 1.5rem;
 }
 
 
