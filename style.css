@@ -94,6 +94,24 @@ header {
   transform: scale(1.1); 
 }
 
+.lenguajes ul li img:hover::after {
+  content: attr(title);
+  position: absolute; 
+  background-color: rgba(0, 0, 0, 0.8); 
+  color: white; 
+  padding: 5px; 
+  border-radius: 5px; 
+  bottom: 100%; 
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap; 
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+}
+
+.lenguajes ul li img:hover::after {
+  opacity: 1;
+}
 
 
 /*Lenguajes*/
@@ -461,6 +479,7 @@ padding: 0.5rem;
   100%{
     transform: perspective(1000px) rotateY(360deg);
   }
+
 }
 .box span{
   position: absolute;
@@ -484,8 +503,10 @@ padding: 0.5rem;
   transition: transform 1s ease;
 }
 
-.box img:hover{
+.box img:hover {
   transform: scale(1.05);
+  animation-play-state: paused;
+  animation: none;
 }
 
 .title-Feature-Proyects{
