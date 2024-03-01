@@ -31,6 +31,14 @@ body{
   background-color: #000000;
 }
 
+@keyframes animate3{
+  0%{
+    transform: translateY(100vh) scale(0);
+  }
+  100%{
+    transform: translateY(-10vh) scale(1);
+  }
+}
 :root{
   --main-color: rgb(32, 244, 8);
 }
@@ -47,6 +55,49 @@ header {
   margin-bottom: 4rem;
   position: relative;
 }
+
+
+/*Lenguajes*/
+
+.lenguajes {
+  text-align: center; 
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+}
+
+.lenguajes ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto; 
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+}
+
+.lenguajes ul li {
+  margin: 10px;
+}
+
+.lenguajes ul li a {
+  text-decoration: none;
+}
+
+.lenguajes ul li img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; 
+  transition: transform 0.3s ease;
+}
+
+
+.lenguajes ul li img:hover {
+  transform: scale(1.1); 
+}
+
+
+
+/*Lenguajes*/
+
 
 header::before {
   content: ""; /* Necesario para que el pseudo-elemento sea visible */
@@ -122,7 +173,7 @@ body::before {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-bottom: 10rem;
+  padding-bottom: 13rem;
 }
 
 .text{
